@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <title>Vite App</title>
+  </head>
+  <body>
+    
+    <script type="module" src="/main.js"></script>
+<h2>Calculations for interest in inclusive Part 36 offers, and in assessments of costs </h2>
+  <div class = 'wholeFront'>
+  
+  
+    <div class = 'front' id = 'frontPage'>
+      <h1>Costs claimed</h1>
+    <p>From what date does the interest run on the costs order?</p>
+    <div class = 'askPrincipalDate'>
+    <input class = 'thisThing' type = 'date' id = 'originalDate' placeholder = 'original date'></input>
+    <button class = 'thisThing' id = 'originalDateButton'>submit</button>
+  <p class = 'rightThing' id = 'originalDateDisplay'></p>
+  </div>
+
+    <p>What is the interest rate?</p>
+    <div class = 'askPrincipalRate'>
+    <input class ='thisThing' id = 'interest' placeholder = 'interest rate' type = 'number'></input>
+    <button class = 'thisThing' id = 'interestButton'>submit</button>
+  <div class = 'rightThing' id = 'interestDisplay'></div> 
+    </div>  
+
+<p>Bill claimed amount</p>
+
+<div class = 'askPrincipalAmount'>
+<input class = 'thisThing' id="thePrincipal" placeholder="principal amount" type="number">
+<button class = 'thisThing' id = 'originalPrincipalButton'>submit</button>
+<p class = 'rightThing' id = 'originalPrincipalDisplay'></p>
+</div>
+
+<button class = 'proceed' id = 'showFrontPage'>Proceed</button>
+
+</div>
+<p id = 'showPrincipalDetails'></p>
+</div>
+
+
+
+
+<h1 id = 'headInterim'>Recording interim payments</h1>
+  <div >
+  <div class = 'interimDetails' id = 'firstInterimDetails'>
+<div class = 'interimQ'>First interim payment amount and date</div>
+<input class = 'interimQ' id = 'firstInterimAmount' placeholder = 'first interim amount' type = 'number'></input>
+<input id = 'firstInterimDate' placeholder = 'first interim date' type = 'date'></input>
+<div class = 'interimButtons'>
+<button class = 'interimBtn' id = 'firstInterimButton'>Submit and continue to next interim payment</button>
+<button class = 'interimBtn' id = 'firstInterimButton2'>If there are no interim payments, proceed</button>
+</div>
+</div>
+<div id = 'firstInterimDisplay'></div>
+  </div>
+
+  <div>
+<div class = 'interimDetails' id = 'secondInterimDetails'>
+<div class = 'interimQ'>Second interim payment amount and date</div>
+<input class = 'interimQ' id = 'secondInterimAmount' placeholder = 'second interim amount' type = 'number'></input>
+<input id = 'secondInterimDate' placeholder = 'second interim date' type = 'date'></input>
+<div class = 'interimButtons'>
+<button class = 'interimBtn' id = 'secondInterimButton'>Submit and continue to next interim payment</button>
+<button class = 'interimBtn' id = 'secondInterimButton2'>If there are no further interim payments, proceed</button>
+</div>
+</div>
+<div id = 'secondInterimDisplay'></div>
+</div>
+
+<div>
+<div class = 'interimDetails' id = 'thirdInterimDetails'>
+<div class = 'interimQ'>Third interim payment amount and date</div>
+<input class = 'interimQ' id = 'thirdInterimAmount' placeholder = 'third interim amount' type = 'number'></input>
+<input id = 'thirdInterimDate' placeholder = 'third interim date' type = 'date'></input>
+<div class = 'interimButtons'>
+<button class = 'interimBtn' id = 'thirdInterimButton'>Submit and continue to next interim payment</button>
+<button class = 'interimBtn' id = 'thirdInterimButton2'>If there are no further interim payments, proceed</button>
+</div>
+</div>
+<div id = 'thirdInterimDisplay'></div>
+</div>
+
+<div>
+<div class = 'interimDetails' id = 'fourthInterimDetails'>
+<div class = 'interimQ'>Fourth interim payment amount and date</div>
+<input class = 'interimQ' id = 'fourthInterimAmount' placeholder = 'fourth interim amount' type = 'number'></input>
+<input id = 'fourthInterimDate' placeholder = 'fourth interim date' type = 'date'></input>
+<div class = 'interimButtons'>
+<button class = 'interimBtn' id = 'fourthInterimButton'>Submit</button>
+<button class = 'interimBtn' id = 'fourthInterimButton2'>If there are no further interim payments, proceed</button>
+</div>
+</div>
+<div id = 'fourthInterimDisplay'></p>
+</div>
+
+
+<div class = 'askAboutTheOffer' id = 'theOffer'>
+  <h1>Calculating interest component of offer</h1>
+  <div  id = 'askAboutOffer'>
+<div class = 'offerInputHead' >Interest inclusive offer amount and 21st day of acceptance period of offer</div>
+<input class = 'offerInputHead' id = 'interestInclusiveOfferAmount' placeholder = 'interest inclusive amount' type = 'number'></input>
+<input id = 'interestInclusiveOfferDate' placeholder = 'interest inclusive date' type = 'date'></input>
+<div class = 'offerBtns'>
+<button id = 'interestInclusiveOfferButton'>Submit</button>
+<button id = 'noOfferButton'  class = 'rightThing'>If there is no offer, proceed</button>
+<br></br>
+</div>
+</div>
+<p id = 'interestInclusiveOfferDisplay'></p>
+
+<button id = 'findExclusiveOffer'>Find offer exclusive of interest on 21st day of acceptance</button>
+<p id = 'theExclusiveOffer'></p>
+</div>
+
+<div class = 'askingBill' id = 'askAboutBill'>
+  <h1>Assessment of costs, interest and comparing with offer</h1>
+  <div id = 'billQuestions'>
+    
+<div class = 'interimQ'>Amount that Bill was assessed at</div>
+<input id = 'billAssessedAmount' placeholder = 'bill assessed amount' type = 'number'></input>
+<input id = 'billAssessedDate' placeholder = 'bill assessed date' type = 'date'></input>
+<button id = 'billAssessedButton'>Submit</button>
+</div>
+<p id = 'billAssessedDisplay'></p>
+
+<div id = 'billAnswers'>
+<button id = 'findInterestOnBill'>Find interest inclusive assessed Bill to be owed at present</button>
+<p id = 'interestOnBillDisplay'></p>
+</div>
+</div>
+
+
+
+
+
+
+
+
+  </body>
+</html>
+

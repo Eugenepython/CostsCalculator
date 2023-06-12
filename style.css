@@ -1,0 +1,147 @@
+body {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.0;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #302727;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+.wholeFront{
+  
+  background-color: #4D3D3D;
+  margin: 5px;
+  padding: 5px;
+}
+
+.proceed {
+  
+  margin-top: 15px;
+  margin-left: 50px;
+  padding: 5px;
+  width: 100px;
+  color:#454545;
+}
+
+.interimRecord {
+  margin: 3px;
+  color: #302727;
+  background:#919191;
+  width: 60%;
+  margin: 2px;
+  padding: 3px;
+
+}
+.interimButtons {
+  //border-style:dotted;
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+  margin: 8px;
+}
+
+.interimBtn {
+  
+  //border-style:dotted;
+  display: flex;
+  width: 40%;
+  margin: 8px;
+  padding : 5px;
+}
+
+.interimDetails {
+  margin: 3px;
+  background: #787878;
+  padding: 2px;
+}
+
+.askPrincipalDate{
+  display: flex;
+  flex-direction: row;
+  width: 400px;
+  //border-style: dotted;
+  //color: purple;
+  position: relative;
+  align-items: center;
+}
+
+.offerInputHead{
+  margin: 5px;
+}
+
+.interimQ {
+  margin: 5px;
+}
+
+.askAboutTheOffer {
+  background: #6A5252;
+  min-height: 140px;
+  margin: 5px;
+  padding: 5px;
+ 
+}
+
+.askingBill {
+background: #886767;
+margin: 5px;
+padding: 5px;
+
+}
+
+
+
+
+.askPrincipalRate {
+  display: flex;
+  flex-direction: row;
+  width: 400px;
+  //border-style: dotted;
+  //color: purple;
+  position: relative;
+  align-items: center;
+}   
+
+.askPrincipalAmount {
+  display: flex;
+  flex-direction: row;
+  width: 400px;
+  //border-style: dotted;
+  //color: purple;
+  position: relative;
+  align-items: center;
+}
+
+
+.rightThing {
+  position:  absolute;
+  right: 0;
+
+
+}
+
+.thisThing {
+  margin: 3px;
+  padding: 3px; 
+}
+
+.offerBtns {
+  display: flex;
+  padding : 3px;
+  flex-direction: row;
+  width: 400px;
+  //border-style: dotted;
+  color: pink;
+  position: absolute;
+  align-items: center;
+}
