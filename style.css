@@ -15,8 +15,34 @@ body {
   -webkit-text-size-adjust: 100%;
 }
 
-h1 {
+input {
+  background-color: #f2f2f2;
+  border: 1px solid #ccc;
+  padding: 8px;
+  width: 210px;
+  height: 40px;
+  margin: 5px;
   font-size: 1.5rem;
+}
+
+
+button {
+  padding: 8px;
+  width: 100px;
+  margin: 5px;
+  height: 40px;
+  font-size: 1.5rem;
+}
+
+.findExclusiveOffer{
+ 
+  width: 50%;
+  height: 80px;
+
+}
+
+h1 {
+  font-size: 2.0rem;
 }
 
 .wholeFront{
@@ -32,7 +58,7 @@ h1 {
   margin-left: 50px;
   padding: 5px;
   width: 100px;
-  color:#454545;
+  
 }
 
 .interimRecord {
@@ -48,18 +74,23 @@ h1 {
   //border-style:dotted;
   display: flex;
   flex-direction: row;
-  width: 50%;
+  width: 100%;
   margin: 8px;
+  font-size: 1.5rem;
 }
 
 .interimBtn {
-  
+  margin-left : 40px;
   //border-style:dotted;
   display: flex;
-  width: 40%;
-  margin: 8px;
+  height: 80px;
+  width: 320px;
+  margin-right: 60px;
   padding : 5px;
 }
+
+
+
 
 .interimDetails {
   margin: 3px;
@@ -70,7 +101,6 @@ h1 {
 .askPrincipalDate{
   display: flex;
   flex-direction: row;
-  width: 400px;
   //border-style: dotted;
   //color: purple;
   position: relative;
@@ -78,6 +108,12 @@ h1 {
 }
 
 .offerInputHead{
+  width: 80%;
+  margin: 5px;
+}
+
+.offerInputThing{
+  width: 50%;
   margin: 5px;
 }
 
@@ -87,9 +123,10 @@ h1 {
 
 .askAboutTheOffer {
   background: #6A5252;
-  min-height: 140px;
+  min-height: 300px;
   margin: 5px;
   padding: 5px;
+  border-style: dotted;
  
 }
 
@@ -106,7 +143,7 @@ padding: 5px;
 .askPrincipalRate {
   display: flex;
   flex-direction: row;
-  width: 400px;
+  //width: 400px;
   //border-style: dotted;
   //color: purple;
   position: relative;
@@ -116,7 +153,7 @@ padding: 5px;
 .askPrincipalAmount {
   display: flex;
   flex-direction: row;
-  width: 400px;
+  //width: 400px;
   //border-style: dotted;
   //color: purple;
   position: relative;
@@ -126,7 +163,7 @@ padding: 5px;
 
 .rightThing {
   position:  absolute;
-  right: 0;
+  right: 10%;
 
 
 }
@@ -140,9 +177,46 @@ padding: 5px;
   display: flex;
   padding : 3px;
   flex-direction: row;
-  width: 400px;
+  width: 60%;
   //border-style: dotted;
   color: pink;
   position: absolute;
   align-items: center;
+  height: 90px:
+}
+
+.offerBtn {
+  width: 200px;
+  height: 80px;
+}
+
+.offerRight {
+  position:  absolute;
+  right: 0;
+  width: 200px;
+  height: 80px;
+
+}
+
+.billAssesedAmount {
+  width: 40%;
+}
+
+.lastButton {
+  width: 50%;
+  height: 80px;
+}
+
+.endButton {
+text-align:center;
+  height: 80px;
+  width: 40%;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.billAnswers {
+  align-items: center;
+  justify-content: center;
 }

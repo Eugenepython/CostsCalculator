@@ -56,6 +56,7 @@ let sixthPeriodInterest = 0;
 let interestIncBill = 0;
 let billInterest = 0;
 let assessedInterest = 0;
+let billAssessedFigure = 0;
 
 
 document.getElementById('firstInterimDetails').style.display = 'none'
@@ -70,6 +71,9 @@ showFrontPage.style.display = 'none'
 
 let billAnswers = document.getElementById('billAnswers');
 billAnswers.style.display = 'none';
+
+let reStart = document.getElementById('reStart');
+reStart.style.display = 'none';
 
 let askAboutBill = document.getElementById('askAboutBill')
 askAboutBill.style.display = 'none'
@@ -565,28 +569,35 @@ let billAssessedDate = document.getElementById('billAssessedDate');
 let billAssessedButton = document.getElementById('billAssessedButton');
 let billAssessedDisplay = document.getElementById('billAssessedDisplay');
 
+billAssessedButton.addEventListener('click', function() {
+  logBillAssessed()
+})
 
 function logBillAssessed(){
   if (billAssessedAmount.value !== '' && billAssessedDate.value !== ''){
-  billAssessedDisplay.innerHTML = billAssessedAmount.value + ' assessed on ' + billAssessedDate.value;
-  assessedBill = billAssessedAmount.value;
-  assessedBillDate = billAssessedDate.value;
+    assessedBill = billAssessedAmount.value;
+    assessedBillDate = billAssessedDate.value;
   billAssessedAmount.value = ''
   billAssessedDate.value = ''
+  console.log(assessedBill)
+  billAssessedDisplay.innerHTML = 'Asessed at £' + Number(assessedBill).toLocaleString()
+  
   billQuestions.style.display = 'none';
   billAnswers.style.display = 'block';
 }}
 
-billAssessedButton.addEventListener('click', function() {
-  logBillAssessed()
-})
+
 
 let findInterestOnBill = document.getElementById('findInterestOnBill');
 findInterestOnBill.addEventListener('click', function() {
   checkInterestOnBill()
   findInterestOnBill.style.display = 'none';
   billAssessedDisplay.style.display = 'none';
+
+  reStart.style.display = 'block';
 })
+
+
 
 function checkInterestOnBill() {
   assessedBill = parseFloat(assessedBill);
@@ -707,4 +718,8 @@ else if (firstInterimPayment > 0 && secondInterimPayment === 0){
   }
  
 
-
+  
+  reStart.addEventListener("click", function() {
+    
+    window.location.reload();
+  });

@@ -105,17 +105,17 @@
   <h1>Calculating interest component of offer</h1>
   <div  id = 'askAboutOffer'>
 <div class = 'offerInputHead' >Interest inclusive offer amount and 21st day of acceptance period of offer</div>
-<input class = 'offerInputHead' id = 'interestInclusiveOfferAmount' placeholder = 'interest inclusive amount' type = 'number'></input>
+<input class = 'offerInputThing' id = 'interestInclusiveOfferAmount' placeholder = 'Interest inclusive amount' type = 'number'></input>
 <input id = 'interestInclusiveOfferDate' placeholder = 'interest inclusive date' type = 'date'></input>
 <div class = 'offerBtns'>
-<button id = 'interestInclusiveOfferButton'>Submit</button>
-<button id = 'noOfferButton'  class = 'rightThing'>If there is no offer, proceed</button>
+<button class = 'offerBtn' id = 'interestInclusiveOfferButton'>Submit</button>
+<button id = 'noOfferButton'  class = 'offerRight'>If there is no offer, proceed</button>
 <br></br>
 </div>
 </div>
 <p id = 'interestInclusiveOfferDisplay'></p>
 
-<button id = 'findExclusiveOffer'>Find offer exclusive of interest on 21st day of acceptance</button>
+<button id = 'findExclusiveOffer' class ='findExclusiveOffer'>Find offer exclusive of interest on 21st day of acceptance</button>
 <p id = 'theExclusiveOffer'></p>
 </div>
 
@@ -124,15 +124,16 @@
   <div id = 'billQuestions'>
     
 <div class = 'interimQ'>Amount that Bill was assessed at</div>
-<input id = 'billAssessedAmount' placeholder = 'bill assessed amount' type = 'number'></input>
+<input id = 'billAssessedAmount' class = 'billAssesedAmount' placeholder = 'bill assessed amount' type = 'number'></input>
 <input id = 'billAssessedDate' placeholder = 'bill assessed date' type = 'date'></input>
 <button id = 'billAssessedButton'>Submit</button>
 </div>
 <p id = 'billAssessedDisplay'></p>
 
-<div id = 'billAnswers'>
-<button id = 'findInterestOnBill'>Find interest inclusive assessed Bill to be owed at present</button>
+<div class = 'billAnswers' id = 'billAnswers'>
+<button id = 'findInterestOnBill' class = 'lastButton'>Find interest inclusive assessed Bill and compare with offer</button>
 <p id = 'interestOnBillDisplay'></p>
+<button class = 'endButton' id = 'reStart'>Go back to the start</button>
 </div>
 </div>
 
