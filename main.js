@@ -580,7 +580,7 @@ function logBillAssessed(){
   billAssessedAmount.value = ''
   billAssessedDate.value = ''
   console.log(assessedBill)
-  billAssessedDisplay.innerHTML = 'Asessed at £' + Number(assessedBill).toLocaleString()
+  billAssessedDisplay.innerHTML = 'Assessed at £' + Number(assessedBill).toLocaleString()
   
   billQuestions.style.display = 'none';
   billAnswers.style.display = 'block';
@@ -659,7 +659,7 @@ else if (firstInterimPayment > 0 && secondInterimPayment === 0){
   'Interest from ' + secondDate + " to " + thirdDate + ' : ' + Number(secondPeriodInterest).toLocaleString() + '<br></br>' +
   'Interest from ' + thirdDate + " to " + assessedBillDate + ' : ' + Number(thirdPeriodInterest).toLocaleString() + '<br></br>' +
   'Total interest : £' +  Number(assessedInterest).toLocaleString() + '<br></br>' + 
-  'Total payable : £' + (assessedBill + assessedInterest) + '<br></br>' + 
+  'Total payable : £' + Number(assessedBill + assessedInterest).toLocaleString() + '<br></br>' + 
   (theOffer > 0 ? 'The interest inclusive offer was worth £' + Number(originalOffer).toLocaleString() + ' on ' + offer21Date + ' therefore ' + (assessedBill < originalOffer? 'you have beaten the offer, congratulations' : 
   ' unfortunately you have not beaten the offer, sorry') : '')
 
